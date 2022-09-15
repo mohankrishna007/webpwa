@@ -4,16 +4,16 @@
     "start_url": ".",
     "display": "standalone",
     "background_color": "#2A3443",
-    "description": "carselling application",
+    "description": "Testing pwa application",
     "theme_color": "#2A3443",
     "icons": [
       {
-        "src": "./img/512X512.png",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.pn",
         "sizes": "512x512",
         "type": "image/png"
       },
   {
-        "src": "./img/96X96.png",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.pn",
         "sizes": "96x96",
         "type": "image/png"
       }
