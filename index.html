@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <head>
-         <!--  manifest  -->
-    <link rel="manifest" href="./manifest.json">
+  <head>
+    <!--  manifest  -->
+    <link rel="manifest" href="./manifest.json" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/jpg" href="./img/logo.jpg" />
 
@@ -15,13 +15,56 @@
     <meta name="mobile-web-app-status-bar-style" content="black" />
     <meta name="mobile-web-app-title" content="Carzone" />
 
+    <!-- place this in a head section -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      href="/img/logo.jpg"
+      sizes="2048x2732"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/img/logo.jpg"
+      sizes="1668x2224"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/img/logo.jpg"
+      sizes="1536x2048"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/img/logo.jpg"
+      sizes="1125x2436"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/img/logo.jpg"
+      sizes="1242x2208"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/img/logo.jpg
+      sizes="750x1334"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/img/logo.jpg
+      sizes="640x1136"
+      rel="apple-touch-startup-image"
+    />
+
     <!-- manifest ends -->
 
-        <link rel="stylesheet" type="text/css" href="styles.css"/> 
-    </head>
-    <body>
-        <h1> Sample PWA Application for BI reports </h1>
-        <iframe title="myreport" src="https://app.powerbi.com/view?r=eyJrIjoiMTZlMDkwOTktYTQ2ZC00NjczLWI4MjMtNjVkZTgwMDBhZGIzIiwidCI6IjUwZDA3NGM5LTFlZjMtNGNiOC1hOTg4LTM1MTdlNThhZWY1ZiJ9&pageName=ReportSection938e08ca9aec5535638b" frameborder="0" allowFullScreen="true"></iframe>
-        <script src="./app.js"></script>
-    </body>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Sample PWA Application for BI reports</h1>
+    <iframe
+      title="myreport"
+      src="https://app.powerbi.com/view?r=eyJrIjoiMTZlMDkwOTktYTQ2ZC00NjczLWI4MjMtNjVkZTgwMDBhZGIzIiwidCI6IjUwZDA3NGM5LTFlZjMtNGNiOC1hOTg4LTM1MTdlNThhZWY1ZiJ9&pageName=ReportSection938e08ca9aec5535638b"
+      frameborder="0"
+      allowfullscreen="true"
+    ></iframe>
+    <script src="./app.js"></script>
+  </body>
 </html>
