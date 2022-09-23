@@ -12,6 +12,25 @@ window.addEventListener("load", (e) => {
     this.setState({ showInstallMessage: true });
   }
 });
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+    deferredPrompt = e;
+});
+
+const installApp = document.getElementById('installApp');
+
+installApp.addEventListener('click', async () => {
+    if (deferredPrompt !== null) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+            deferredPrompt = null;
+        }
+    }
+});
   
 async function registerSW() {
   if ("serviceWorker" in navigator) {

@@ -10,6 +10,7 @@ self.addEventListener("install", async (event) => {
   const cache = await caches.open(cacheName);
   await cache.addAll(staticAssets);
 });
+
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   event.respondWith(cacheFirst(req));
